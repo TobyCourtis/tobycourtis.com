@@ -1,5 +1,4 @@
 import React from "react";
-import profileImage from '../images/pp-square.png'
 import './About.css'
 
 
@@ -8,7 +7,7 @@ function About() {
         <div className={"about-div"}>
             <div className={"about-inner-div"}>
                 <div className={"left"}>
-                    <img src={profileImage} alt="profile-pic" className={'profile-image'}/>
+                    <img src={'/pp-square.png'} alt="profile-pic" className={'profile-image'}/>
                 </div>
 
 
