@@ -52,7 +52,7 @@
 }
 
 #project-description {
-    font-weight: 1000;
+    font-weight: 1000
 }
 
 #project-title {
@@ -71,10 +71,10 @@
     border: 1px solid #2147be; /* TODO remove me */
 }
 
-.item {
+.projects-inner-div .item {
     transition: background-color 0.3s ease;
 }
 
-.item:hover {
+.projects-inner-div .item:hover {
     background-color: rgba(154, 154, 154, 0.34);
 }

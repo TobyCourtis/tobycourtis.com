@@ -4,6 +4,7 @@ import About from "../About/About";
 import Header from "../Header/Header";
 import Projects from "../Projects/Projects";
 import Footer from "../Footer/Footer";
+import Languages from "../Languages/Languages";
 
 function App() {
     return (
@@ -12,6 +13,9 @@ function App() {
                 <Header/>
                 <About/>
                 <Projects/>
+                <Languages />
+                {/*<Technologies />*/}
+                {/*<Contact />*/}
                 <Footer />
             </div>
         </div>

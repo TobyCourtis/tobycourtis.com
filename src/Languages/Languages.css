@@ -1,0 +1,50 @@
+#languages-title {
+    padding-left: 40px;
+    padding-bottom: 30px;
+    font-weight: 700;
+}
+
+.languages-outer-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*border: 1px solid red; !* TODO remove me *!*/
+}
+
+.languages-inner-div {
+    width: 75%;
+}
+
+.language-div {
+    border: 1px solid rgba(117, 113, 113, 0.73); /* TODO remove me */
+    border-radius: 10px;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+#language-image {
+    height: 80%;
+    width: auto;
+}
+
+.language-inner-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%
+}
+
+.language-div p {
+    text-align: left;
+
+    font-size: 2vh;
+    font-family: "Cutive Mono", monospace;
+    font-weight: 575;
+    font-style: normal;
+
+    padding: 0;
+    margin: 0;
+}
