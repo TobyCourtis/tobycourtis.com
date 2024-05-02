@@ -1,9 +1,11 @@
 .App {
+    height: 100%;
+    min-height: 100%;
+
     font-family: "Cutive Mono", monospace;
     font-weight: 400;
     font-style: normal;
 }
-
 
 .content {
     width: 50vw;
