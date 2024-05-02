@@ -16,7 +16,6 @@ function App() {
                 <About/>
                 <Projects/>
                 <Languages />
-                {/*<Technologies />*/}
                 <GitHubContributions />
                 <Contact />
                 <Footer />
