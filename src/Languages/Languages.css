@@ -27,7 +27,7 @@
 
 
 #language-image {
-    height: 80%;
+    height: 70%;
     width: auto;
 }
 
@@ -35,13 +35,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 35%
+    width: 45%
 }
 
 .language-div p {
     text-align: left;
 
-    font-size: 2vh;
+    font-size: 1.5vh;
     font-family: "Cutive Mono", monospace;
     font-weight: 575;
     font-style: normal;
