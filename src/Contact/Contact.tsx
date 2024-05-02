@@ -1,6 +1,5 @@
 import './Contact.css'
 import * as React from 'react';
-import image from "../images/kotlin.png";
 import {experimentalStyled as styled} from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";

@@ -3,9 +3,13 @@ import * as React from 'react';
 import {experimentalStyled as styled} from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
-import detector from '../images/detector.png';
 import Box from '@mui/material/Box';
 
+interface IProjectProp {
+    title: string;
+    description: string;
+    image: string;
+}
 
 const Item = styled(Paper)(({theme}) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -14,20 +18,40 @@ const Item = styled(Paper)(({theme}) => ({
     color: theme.palette.text.secondary,
 }));
 
-const Project = () => {
-    // TODO make the projects dynamic
+const Project: React.FC<IProjectProp> = ({title, description, image}) => {
     return (
         <div className={'project-div'}>
             <div className={'project-inner-div'}>
-                <img src={detector} id={'project-image'} alt={'project-image'}/>
-                <p id={'project-title'}>Cyberbullying Detector</p>
-                <p id={'project-description'}>ML/NLP</p>
+                <img src={image} id={'project-image'} alt={'project-image'}/>
+                <p id={'project-title'}>{title}</p>
+                <p id={'project-description'}>{description}</p>
             </div>
         </div>
     );
 };
 
-function Projects() {
+const Projects: React.FC = () => {
+    // Define an array of project objects with title, description, and image
+    const projects: IProjectProp[] = [
+        {
+            title: 'Cyberbullying Detector',
+            description: 'ML/SVM/NLP',
+            image: '/bully.png'
+        }, {
+            title: 'Crypto Trading Bot',
+            description: 'Python/Trading',
+            image: '/trading.png'
+        }, {
+            title: 'e-Sports Tournament Hub',
+            description: 'Data/Full-stack/Web',
+            image: '/tth.png'
+        }, {
+            title: 'Pedestrian Detector',
+            description: 'ML/NN/OpenCV',
+            image: '/pedestrian.png'
+        }
+    ];
+
     return (
         <div>
             <div>
@@ -37,10 +61,14 @@ function Projects() {
                 <div className={"projects-inner-div"}>
                     <Box sx={{flexGrow: 1}}>
                         <Grid container spacing={{xs: 5}}>
-                            {Array.from(Array(6)).map((_, index) => (
+                            {projects.map((project, index) => (
                                 <Grid item xs={6} key={index}>
                                     <Item elevation={0} className={'item'}>
-                                        <Project/>
+                                        <Project
+                                            title={project.title}
+                                            description={project.description}
+                                            image={project.image}
+                                        />
                                     </Item>
                                 </Grid>
                             ))}
@@ -49,7 +77,7 @@ function Projects() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Projects
+export default Projects;
