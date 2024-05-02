@@ -1,0 +1,24 @@
+#contributions-title {
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    font-weight: 700;
+}
+
+.chart-outer-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.chart-inner-div {
+    width: 75%;
+}
+
+#chart-img {
+    width: 100%;
+}
+
+
+
+

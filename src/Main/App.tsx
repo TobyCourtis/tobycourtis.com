@@ -6,6 +6,7 @@ import Projects from "../Projects/Projects";
 import Footer from "../Footer/Footer";
 import Languages from "../Languages/Languages";
 import Contact from "../Contact/Contact";
+import GitHubContributions from "../GitHubContributions/GitHubContributions";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <Projects/>
                 <Languages />
                 {/*<Technologies />*/}
+                <GitHubContributions />
                 <Contact />
                 <Footer />
             </div>
