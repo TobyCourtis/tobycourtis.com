@@ -32,10 +32,18 @@
 }
 
 .language-inner-div{
+    width: 45%
+}
+
+.language-image-div {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45%
+}
+
+.language-name-div {
+    align-items: center;
+    display: flex;
 }
 
 .language-div p {
