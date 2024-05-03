@@ -5,6 +5,11 @@
     color: black;
 }
 
+.header-div a {
+    color: inherit;
+    text-decoration: none;
+}
+
 
 .header-div button {
     cursor: pointer;

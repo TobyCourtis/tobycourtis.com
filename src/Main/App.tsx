@@ -10,15 +10,15 @@ import GitHubContributions from "../GitHubContributions/GitHubContributions";
 
 function App() {
     return (
-        <div className="App">
+        <div className="App" id="home">
             <div className={"content"}>
                 <Header/>
                 <About/>
                 <Projects/>
-                <Languages />
-                <GitHubContributions />
-                <Contact />
-                <Footer />
+                <Languages/>
+                <GitHubContributions/>
+                <Contact/>
+                <Footer/>
             </div>
         </div>
     );

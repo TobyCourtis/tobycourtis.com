@@ -52,7 +52,7 @@ const Projects: React.FC = () => {
     ];
 
     return (
-        <div>
+        <div id="projects">
             <div>
                 <h2 id={"projects-title"}>Projects</h2>
             </div>

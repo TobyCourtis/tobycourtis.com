@@ -19,7 +19,7 @@ const Item = styled(Paper)(({theme}) => ({
 
 function contacts() {
     return (
-        <>
+        <div id={'contact'}>
             <div>
                 <div>
                     <h2 id={"contacts-title"}>Contact</h2>
@@ -94,7 +94,7 @@ function contacts() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
