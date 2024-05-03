@@ -9,8 +9,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /*border: 1px solid red; !* TODO remove me *!*/
 }
 
 .languages-inner-div {
@@ -18,7 +16,7 @@
 }
 
 .language-div {
-    border: 1px solid rgba(117, 113, 113, 0.73); /* TODO remove me */
+    border: 1px solid rgba(117, 113, 113, 0.73);
     border-radius: 10px;
     height: 8vh;
     display: flex;
@@ -31,7 +29,7 @@
     width: auto;
 }
 
-.language-inner-div{
+.language-inner-div {
     width: 45%
 }
 
