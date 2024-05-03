@@ -7,7 +7,9 @@ function Header() {
                 {/* left hand side */}
                 <li>
                     <button className={'left'}>
-                        <a href="#home"><h1>tobycourtis.com</h1></a>
+                        <a href="#home">
+                            <h1>tobycourtis.com</h1>
+                        </a>
                     </button>
                 </li>
 
@@ -15,21 +17,21 @@ function Header() {
                 <li className={'right'}>
                     <button>
                         <a href="#contact">
-                            <p><a className={'tilde'}>~</a>/contact</p>
+                            <p><span className={'tilde'}>~</span>/contact</p>
                         </a>
                     </button>
                 </li>
                 <li className={'right'}>
                     <button>
                         <a href="#projects">
-                            <p><a className={'tilde'}>~</a>/projects</p>
+                            <p><span className={'tilde'}>~</span>/projects</p>
                         </a>
                     </button>
                 </li>
                 <li className={'right'}>
                     <button>
                         <a href="#about">
-                            <p><a className={'tilde'}>~</a>/</p>
+                            <p><span className={'tilde'}>~</span>/</p>
                         </a>
                     </button>
                 </li>
