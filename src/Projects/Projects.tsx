@@ -31,7 +31,6 @@ const Project: React.FC<IProjectProp> = ({title, description, image}) => {
 };
 
 const Projects: React.FC = () => {
-    // Define an array of project objects with title, description, and image
     const projects: IProjectProp[] = [
         {
             title: 'Cyberbullying Detector',

@@ -34,9 +34,9 @@ const Language: React.FC<ILanguageProps> = ({name, image}) => {
 
 function Languages() {
     const languages: ILanguageProps[] = [
-        {name: 'Kotlin', image: '/kotlin.png'},
         {name: 'Python', image: '/python.png'},
         {name: 'Java', image: '/java.png'},
+        {name: 'Kotlin', image: '/kotlin.png'},
         {name: 'Typescript', image: 'typescript.png'},
         {name: 'Javascript', image: '/javascript.png'},
         {name: 'HTML/CSS', image: '/html.png'},
