@@ -25,11 +25,13 @@ interface IContactProps {
 
 const ContactItem: React.FC<IContactProps> = ({name, icon: Icon, url}) => {
     const handleClick = () => {
+        console.log('event tracking started')
         ReactGA.event({
-            category: 'Contact',
+            category: 'Link',
             action: 'Click',
-            label: name,
+            label: 'contact_click_' + name,
         });
+        console.log('event tracking finished')
     };
 
     return (
