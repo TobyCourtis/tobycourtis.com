@@ -60,6 +60,17 @@ const contactItems: IContactProps[] = [
 ];
 
 const Contacts: React.FC = () => {
+
+    const handleClickTmp = () => {
+        console.log('event tracking started')
+        ReactGA.event({
+            category: 'Click',
+            action: 'Click',
+            label: 'tmp_button_press',
+        });
+        console.log('event tracking finished')
+    };
+
     return (
         <div id={'contact'}>
             <div>
@@ -77,6 +88,7 @@ const Contacts: React.FC = () => {
                             </Grid>
                         </Box>
                     </div>
+                    <button onClick={handleClickTmp}>Test</button>
                 </div>
             </div>
         </div>
