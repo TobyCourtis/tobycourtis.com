@@ -1,4 +1,4 @@
-import './Contact.css'
+import './Contact.css';
 import * as React from 'react';
 import {experimentalStyled as styled} from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
@@ -8,6 +8,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import ReactGA from "react-ga4";
 
 const Item = styled(Paper)(({theme}) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -16,8 +17,47 @@ const Item = styled(Paper)(({theme}) => ({
     color: theme.palette.text.secondary,
 }));
 
+interface IContactProps {
+    name: string;
+    icon: React.ElementType;
+    url: string;
+}
 
-function contacts() {
+const ContactItem: React.FC<IContactProps> = ({name, icon: Icon, url}) => {
+    const handleClick = () => {
+        ReactGA.event({
+            category: 'Contact',
+            action: 'Click',
+            label: name,
+        });
+    };
+
+    return (
+        <Grid item xs={6}>
+            <Item elevation={0} className={'item'}>
+                <a href={url} onClick={handleClick}>
+                    <div className={'contact-div'}>
+                        <div className={'contact-image-div contact-inner-div'}>
+                            <Icon id={'icon'}/>
+                        </div>
+                        <div className={'contact-name-div contact-inner-div'}>
+                            <p id={'contact-name'}>{name}</p>
+                        </div>
+                    </div>
+                </a>
+            </Item>
+        </Grid>
+    );
+};
+
+const contactItems: IContactProps[] = [
+    {name: 'EMAIL', icon: EmailIcon, url: 'mailto:toby.courtis@gmail.com'},
+    {name: 'LINKEDIN', icon: LinkedInIcon, url: 'https://www.linkedin.com/in/tobycourtis/'},
+    {name: 'YOUTUBE', icon: YouTubeIcon, url: 'https://www.youtube.com/user/TobyCourtis'},
+    {name: 'GITHUB', icon: GitHubIcon, url: 'https://github.com/TobyCourtis'},
+];
+
+const Contacts: React.FC = () => {
     return (
         <div id={'contact'}>
             <div>
@@ -28,74 +68,17 @@ function contacts() {
                 <div className={"contacts-outer-div"}>
                     <div className={"contacts-inner-div"}>
                         <Box sx={{flexGrow: 1}}>
-
                             <Grid container rowSpacing={3} columnSpacing={{xs: 4}}>
-                                <Grid item xs={6} key={'email-item'}>
-                                    <Item elevation={0} className={'item'}>
-                                        <a href={"mailto:toby.courtis@gmail.com"}>
-                                            <div className={'contact-div'}>
-                                                <div className={'contact-image-div contact-inner-div'}>
-                                                    <EmailIcon id={'icon'}/>
-                                                </div>
-                                                <div className={'contact-name-div contact-inner-div'}>
-                                                    <p id={'contact-name'}>EMAIL</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </Item>
-                                </Grid>
-
-                                <Grid item xs={6} key={'linkedin-item'}>
-                                    <Item elevation={0} className={'item'}>
-                                        <a href={"https://www.linkedin.com/in/tobycourtis/"}>
-                                            <div className={'contact-div'}>
-                                                <div className={'contact-image-div contact-inner-div'}>
-                                                    <LinkedInIcon id={'icon'}/>
-                                                </div>
-                                                <div className={'contact-name-div contact-inner-div'}>
-                                                    <p id={'contact-name'}>LINKEDIN</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </Item>
-                                </Grid>
-
-                                <Grid item xs={6} key={'yt-item'}>
-                                    <Item elevation={0} className={'item'}>
-                                        <a href={"https://www.youtube.com/user/TobyCourtis"}>
-                                            <div className={'contact-div'}>
-                                                <div className={'contact-image-div contact-inner-div'}>
-                                                    <YouTubeIcon id={'icon'}/>
-                                                </div>
-                                                <div className={'contact-name-div contact-inner-div'}>
-                                                    <p id={'contact-name'}>YOUTUBE</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </Item>
-                                </Grid>
-
-                                <Grid item xs={6} key={'github-item'}>
-                                    <Item elevation={0} className={'item'}>
-                                        <a href={"https://github.com/TobyCourtis"}>
-                                            <div className={'contact-div'}>
-                                                <div className={'contact-image-div contact-inner-div'}>
-                                                    <GitHubIcon id={'icon'}/>
-                                                </div>
-                                                <div className={'contact-name-div contact-inner-div'}>
-                                                    <p id={'contact-name'}>GITHUB</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </Item>
-                                </Grid>
+                                {contactItems.map((item, index) => (
+                                    <ContactItem key={index} name={item.name} icon={item.icon} url={item.url}/>
+                                ))}
                             </Grid>
                         </Box>
                     </div>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default contacts;
+export default Contacts;
