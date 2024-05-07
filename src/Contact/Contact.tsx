@@ -27,8 +27,8 @@ const ContactItem: React.FC<IContactProps> = ({name, icon: Icon, url}) => {
     const handleClick = () => {
         console.log('event tracking started')
         ReactGA.event({
-            category: 'Link',
-            action: 'Click',
+            category: 'link_category',
+            action: 'contact_link_click',
             label: 'contact_click_' + name,
         });
         console.log('event tracking finished')
@@ -61,16 +61,6 @@ const contactItems: IContactProps[] = [
 
 const Contacts: React.FC = () => {
 
-    const handleClickTmp = () => {
-        console.log('event tracking started')
-        ReactGA.event({
-            category: 'Click',
-            action: 'Click',
-            label: 'tmp_button_press',
-        });
-        console.log('event tracking finished')
-    };
-
     return (
         <div id={'contact'}>
             <div>
@@ -88,7 +78,6 @@ const Contacts: React.FC = () => {
                             </Grid>
                         </Box>
                     </div>
-                    <button onClick={handleClickTmp}>Test</button>
                 </div>
             </div>
         </div>
