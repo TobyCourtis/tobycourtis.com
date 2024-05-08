@@ -22,7 +22,7 @@ const Project: React.FC<IProjectProp> = ({title, description, image}) => {
     return (
         <div className={'project-div'}>
             <div className={'project-inner-div'}>
-                <img src={image} id={'project-image'} alt={'project-image'}/>
+                <img src={image} id={'project-image'} alt={'project'}/>
                 <p id={'project-title'}>{title}</p>
                 <p id={'project-description'}>{description}</p>
             </div>
