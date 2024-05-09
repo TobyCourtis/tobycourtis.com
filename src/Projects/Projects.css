@@ -1,7 +1,8 @@
 #projects-title {
     padding-left: 40px;
     padding-bottom: 30px;
-    font-weight: 700;
+    font-weight: 450;
+    font-size: 3vh;
 }
 
 .projects-outer-div {
@@ -25,7 +26,6 @@
     height: 100%;
     width: 100%;
 
-    /* horisontal centre */
     display: flex;
     justify-content: center;
     align-items: center;

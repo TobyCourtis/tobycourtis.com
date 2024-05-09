@@ -64,11 +64,13 @@ ol {
 }
 
 .header-div li p {
-    font-size: 20px;
+    font-size: 2vh;
+    padding: 0;
+    margin: 0;
 }
 
 .header-div li h1 {
-    font-size: 30px;
+    font-size: 4vh;
     font-weight: 550;
     padding: 0;
     margin: 0;

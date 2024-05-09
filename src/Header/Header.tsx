@@ -8,7 +8,7 @@ function Header() {
                 <li>
                     <button className={'left'}>
                         <a href="#home">
-                            <h1>tobycourtis.com</h1>
+                            <h1 className={'site-title'}>tobycourtis.com</h1>
                         </a>
                     </button>
                 </li>
