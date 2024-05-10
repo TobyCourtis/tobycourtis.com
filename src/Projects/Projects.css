@@ -17,18 +17,38 @@
 
 #project-image {
     width: 100%;
-    height: 70%;
+    height: 100%;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
+}
+
+.highlight-proj {
+    height: 40vh !important;
 }
 
 .project-div {
-    height: 100%;
+    height: 20vh;
     width: 100%;
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
+
+    /*border: 2px solid pink; !* todo remove me *!*/
+}
+
+.project-image-div {
+    height: 70%;
+    width: 100%
+}
+
+.text-div {
+    background: rgba(119, 119, 119, 0.56);
+    height: 30%;
+    width: 100%;
+
+
+    border-radius: 0 0 5px 5px;
 }
 
 .project-div p {
@@ -46,7 +66,7 @@
 .project-inner-div {
     padding: 5px;
 
-    width: 80%;
+    width: 100%;
 }
 
 #project-description {
