@@ -52,8 +52,8 @@
     text-align: left;
 
     font-size: 15px;
-    font-family: "Cutive Mono", monospace;
-    font-weight: 400;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 800;
     font-style: normal;
 
     padding: 0;
@@ -67,7 +67,7 @@
 }
 
 #project-description {
-    font-weight: 1000
+    font-weight: 400
 }
 
 #project-title {
