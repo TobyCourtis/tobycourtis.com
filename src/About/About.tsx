@@ -13,11 +13,16 @@ function About() {
 
                 <div className={"right"}>
                     <div>
-                        <h1>Hey, I'm Toby!</h1>
-                        <p>I'm a software dev, currently training for an Ironman!</p>
-                        <br/>
+                        <p>Hey,</p>
+                        <h1>I'm Toby!</h1>
+                        <p>A <span className={'highlight-text'}>Full Stack Software Dev</span>, currently</p>
+                        <p>training for an Ironman triathlon.</p>
 
-                        <p>Take a look below at some of my past and present projects ...</p>
+                        <p>Take a look at some of my work ...</p>
+                        <div className={'about-buttons-div'}>
+                            <button className={'about-button contact-me'}>Contact me</button>
+                            <button className={'about-button see-work'}>See my work</button>
+                        </div>
                     </div>
                 </div>
             </div>

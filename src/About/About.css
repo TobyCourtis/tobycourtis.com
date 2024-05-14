@@ -26,11 +26,73 @@
     margin: auto;
 }
 
+.highlight-text {
+    font-weight: 550;
+}
 
 .about-div h1 {
-    font-size: 3vh;
+    font-size: 3.5vh;
+    font-weight: 600;
 }
 
 .about-div p {
     font-size: 2vh;
+    font-weight: 350;
+}
+
+.about-buttons-div {
+    display: flex;
+    justify-content: left;
+}
+
+.contact-me {
+    background-color: #9A9483;
+    border: 2px solid #9A9483;
+    color: #ffffff;
+    margin-right: 1.5vw;
+}
+
+.see-work {
+    background-color: #ffffff;
+    border: 2px solid #9A9483;
+    color: #9A9483;
+}
+
+
+.about-button {
+    appearance: none;
+    border-radius: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1vh;
+    font-weight: 600;
+    line-height: normal;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 30%;
+    will-change: transform;
+}
+
+.about-button:disabled {
+    pointer-events: none;
+}
+
+.about-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.about-button:active {
+    box-shadow: none;
+    transform: translateY(0);
 }
