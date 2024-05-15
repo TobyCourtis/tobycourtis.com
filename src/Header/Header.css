@@ -3,6 +3,7 @@
     min-height: 70px;
     display: flex;
     color: black;
+    margin-top: 1vh;
 }
 
 .header-div a {
