@@ -12,3 +12,10 @@
     min-width: 55vw;
     margin: 0 auto;
 }
+
+.section-title {
+    padding: 70px 0 70px 40px;
+    font-weight: 400;
+    font-size: 3vh;
+    margin: 0;
+}

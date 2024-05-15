@@ -21,7 +21,7 @@ function App() {
 
     return (
         <div className="App" id="home">
-            <div className={"content"}>
+            <div>
                 <Header/>
                 <About/>
                 <Projects/>

@@ -2,7 +2,7 @@ import './Header.css';
 
 function Header() {
     return (
-        <div className={"header-div"}>
+        <div className={"header-div content"}>
             <ol className="header-list">
                 {/* left hand side */}
                 <li>

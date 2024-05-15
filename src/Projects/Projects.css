@@ -1,17 +1,15 @@
-#projects-title {
-    padding-left: 40px;
-    padding-bottom: 30px;
-    font-weight: 450;
-    font-size: 3vh;
+.projects-outer {
+    background: rgba(229, 220, 195, 0.28);
+    width: 100%;
 }
 
-.projects-outer-div {
+.projects-content-outer-div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.projects-inner-div {
+.projects-content-inner-div {
     width: 85%;
 }
 
@@ -85,10 +83,10 @@
     padding: 0;
 }
 
-.projects-inner-div .item {
+.projects-content-inner-div .item {
     transition: background-color 0.3s ease;
 }
 
-.projects-inner-div .item:hover {
+.projects-content-inner-div .item:hover {
     background-color: rgba(154, 154, 154, 0.34);
 }

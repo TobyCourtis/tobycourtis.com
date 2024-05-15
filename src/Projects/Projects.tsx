@@ -75,53 +75,55 @@ const Projects: React.FC = () => {
     ];
 
     return (
-        <div id="projects">
-            <div>
-                <h2 id={"projects-title"}>Projects</h2>
-            </div>
-            <div className={"projects-outer-div"}>
-                <div className={"projects-inner-div"}>
-                    <Grid container spacing={{xs: 4}}>
-                        {projects.map((project, index) => (
-                            <Grid item xs={4} key={index}>
-                                <Item elevation={0} className={'item'}>
-                                    <Project
-                                        title={project.title}
-                                        description={project.description}
-                                        image={project.image}
-                                    />
-                                </Item>
-                            </Grid>
-                        ))}
-                    </Grid>
-
-                    <Grid container spacing={{xs: 4}}>
-                        {highlightProj.map((project, index) => (
-                            <Grid item xs={8} key={index}>
-                                <Item elevation={0} className={'item'}>
-                                    <Project
-                                        title={project.title}
-                                        description={project.description}
-                                        image={project.image}
-                                        className={'highlight-proj'}
-                                    />
-                                </Item>
-                            </Grid>
-                        ))}
-                        <Grid item xs={4} key={'more'}>
-                            <Item elevation={0} className={'item'}>
-                                {moreProjects.map((project, index) => (
-                                    <Project
-                                        title={project.title}
-                                        description={project.description}
-                                        image={project.image}
-                                    />
-                                ))}
-                            </Item>
+        <div className="projects-outer">
+            <div className={'projects content'}>
+                <div>
+                    <h2 className={"section-title"}>Projects</h2>
+                </div>
+                <div className={"projects-content-outer-div"}>
+                    <div className={"projects-content-inner-div"}>
+                        <Grid container spacing={{xs: 4}}>
+                            {projects.map((project, index) => (
+                                <Grid item xs={4} key={index}>
+                                    <Item elevation={0} className={'item'}>
+                                        <Project
+                                            title={project.title}
+                                            description={project.description}
+                                            image={project.image}
+                                        />
+                                    </Item>
+                                </Grid>
+                            ))}
                         </Grid>
-                    </Grid>
+
+                        <Grid container spacing={{xs: 4}}>
+                            {highlightProj.map((project, index) => (
+                                <Grid item xs={8} key={index}>
+                                    <Item elevation={0} className={'item'}>
+                                        <Project
+                                            title={project.title}
+                                            description={project.description}
+                                            image={project.image}
+                                            className={'highlight-proj'}
+                                        />
+                                    </Item>
+                                </Grid>
+                            ))}
+                            <Grid item xs={4} key={'more'}>
+                                <Item elevation={0} className={'item'}>
+                                    {moreProjects.map((project, index) => (
+                                        <Project
+                                            title={project.title}
+                                            description={project.description}
+                                            image={project.image}
+                                        />
+                                    ))}
+                                </Item>
+                            </Grid>
+                        </Grid>
 
 
+                    </div>
                 </div>
             </div>
         </div>

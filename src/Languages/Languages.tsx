@@ -43,10 +43,10 @@ function Languages() {
     ];
 
     return (
-        <>
+        <div className={'content'}>
             <div>
                 <div>
-                    <h2 id={"languages-title"}>Languages</h2>
+                    <h2 className={"section-title"}>Languages</h2>
                 </div>
 
                 <div className={"languages-outer-div"}>
@@ -65,7 +65,7 @@ function Languages() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

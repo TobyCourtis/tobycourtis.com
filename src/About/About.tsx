@@ -1,10 +1,9 @@
 import React from "react";
 import './About.css'
 
-
 function About() {
     return (
-        <div className={"about-div"} id="about">
+        <div className={"about-div content"} id="about">
             <div className={"about-inner-div"}>
                 <div className={"left"}>
                     <img src={'/pp-square.png'} alt="profile-pic" className={'profile-image'}/>
