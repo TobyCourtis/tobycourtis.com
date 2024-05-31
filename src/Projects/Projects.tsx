@@ -29,8 +29,10 @@ const Project: React.FC<IProjectProp> = ({title, description, image, className})
                     <img src={image} id={'project-image'} alt={'project'}/>
                 </div>
                 <div className={'text-div'}>
-                    <p id={'project-title'}>{title}</p>
-                    <p id={'project-description'}>{description}</p>
+                    <div className={'text-inner-div'}>
+                        <p id={'project-title'}>{title}</p>
+                        <p id={'project-description'}>{description}</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -82,7 +84,7 @@ const Projects: React.FC = () => {
                 </div>
                 <div className={"projects-content-outer-div"}>
                     <div className={"projects-content-inner-div"}>
-                        <Grid container spacing={{xs: 4}}>
+                        <Grid container spacing={{xs: 6}}>
                             {projects.map((project, index) => (
                                 <Grid item xs={4} key={index}>
                                     <Item elevation={0} className={'item'}>
@@ -96,7 +98,7 @@ const Projects: React.FC = () => {
                             ))}
                         </Grid>
 
-                        <Grid container spacing={{xs: 4}}>
+                        <Grid container spacing={{xs: 6}} id={'project-highlight-grid'}>
                             {highlightProj.map((project, index) => (
                                 <Grid item xs={8} key={index}>
                                     <Item elevation={0} className={'item'}>
