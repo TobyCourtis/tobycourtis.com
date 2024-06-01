@@ -62,10 +62,10 @@ const contactItems: IContactProps[] = [
 const Contacts: React.FC = () => {
 
     return (
-        <div id={'contact'}>
+        <div className={'contact content'}>
             <div>
                 <div>
-                    <h2 id={"contacts-title"}>Contact</h2>
+                    <h2 className={"section-title"}>Contact</h2>
                 </div>
 
                 <div className={"contacts-outer-div"}>

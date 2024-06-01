@@ -3,9 +3,9 @@ import './GitHubContributions.css'
 
 function GitHubContributions() {
     return (
-        <div className={"contributions-div"}>
+        <div className={"contributions-div content"}>
             <div>
-                <h2 id={"contributions-title"}>GitHub Contributions</h2>
+                <h2 className={"section-title"}>GitHub Contributions</h2>
             </div>
             <div className={'chart-outer-div'}>
                 <div className={'chart-inner-div'}>
