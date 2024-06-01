@@ -76,7 +76,7 @@ const Projects: React.FC = () => {
     ];
 
     return (
-        <div className="projects-outer">
+        <div className="projects-outer" id={'projects'}>
             <div className={'projects content'}>
                 <div>
                     <h2 className={"section-title"}>Projects</h2>
@@ -112,7 +112,7 @@ const Projects: React.FC = () => {
                             ))}
                             <Grid item xs={4} key={'more'}>
                                 <Item elevation={0} className={'item'}>
-                                    {moreProjects.map((project, index) => (
+                                    {moreProjects.map((project, _) => (
                                         <Project
                                             title={project.title}
                                             description={project.description}
