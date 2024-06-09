@@ -45,9 +45,9 @@ const Projects: React.FC = () => {
             description: 'ML/SVM/NLP',
             image: '/bully.png'
         }, {
-            title: 'Crypto Trading Bot',
-            description: 'Python/Trading',
-            image: '/trading.png'
+            title: 'Prezle App',
+            description: 'React/Ionic/Capacitor',
+            image: '/prezle.png'
         }, {
             title: 'e-Sports Tournament Hub',
             description: 'Data/Full-stack/Web',
@@ -57,21 +57,21 @@ const Projects: React.FC = () => {
 
     const highlightProj: IProjectProp[] = [
         {
-            title: 'Pedestrian Detector',
-            description: 'ML/NN/OpenCV',
-            image: '/pedestrian.png'
+            title: 'Crypto Trading Bot',
+            description: 'Python/Trading',
+            image: '/trading.png'
         }
     ];
 
     const moreProjects: IProjectProp[] = [
         {
+            title: 'Dumb Statistics',
+            description: 'Python/React/Web',
+            image: '/dumbstats.png'
+        }, {
             title: 'Pedestrian Detector',
             description: 'ML/NN/OpenCV',
             image: '/pedestrian.png'
-        }, {
-            title: 'e-Sports Tournament Hub',
-            description: 'Data/Full-stack/Web',
-            image: '/tth.png'
         }
     ];
 
