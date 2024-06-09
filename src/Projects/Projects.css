@@ -3,6 +3,10 @@
     width: 100%;
 }
 
+.projects-footer{
+    height: 1vh;
+}
+
 .projects-content-outer-div {
     display: flex;
     justify-content: center;
@@ -95,10 +99,9 @@
 
 .projects-content-inner-div .item {
     background: inherit;
-    transition: background-color 0.3s ease;
 }
 
-.projects-content-inner-div .item:hover {
-    background-color: rgba(154, 154, 154, 0.34);
-    border-radius: 10px;
+.project-div:hover {
+    -ms-transform: scale(1.07);
+    transform: scale(1.07);
 }

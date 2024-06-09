@@ -18,7 +18,12 @@ const Item = styled(Paper)(({theme}) => ({
     color: theme.palette.text.secondary,
 }));
 
-const Project: React.FC<IProjectProp> = ({title, description, image, className}) => {
+const Project: React.FC<IProjectProp> = ({
+                                             title,
+                                             description,
+                                             image,
+                                             className
+                                         }) => {
     const projectClasses = `project-div ${className || ''}`;
 
     return (
@@ -127,6 +132,7 @@ const Projects: React.FC = () => {
                     </div>
                 </div>
             </div>
+            <div className={'projects-footer'}></div>
         </div>
     );
 }
