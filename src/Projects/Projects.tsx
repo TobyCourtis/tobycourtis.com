@@ -57,6 +57,14 @@ const Projects: React.FC = () => {
             title: 'e-Sports Tournament Hub',
             description: 'Data/Full-stack/Web',
             image: '/tth.png'
+        }, {
+            title: 'Dumb Statistics',
+            description: 'Python/React/Web',
+            image: '/dumbstats.png'
+        }, {
+            title: 'Pedestrian Detector',
+            description: 'ML/NN/OpenCV',
+            image: '/pedestrian.png'
         }
     ];
 
@@ -65,18 +73,6 @@ const Projects: React.FC = () => {
             title: 'Crypto Trading Bot',
             description: 'Python/Trading',
             image: '/trading.png'
-        }
-    ];
-
-    const moreProjects: IProjectProp[] = [
-        {
-            title: 'Dumb Statistics',
-            description: 'Python/React/Web',
-            image: '/dumbstats.png'
-        }, {
-            title: 'Pedestrian Detector',
-            description: 'ML/NN/OpenCV',
-            image: '/pedestrian.png'
         }
     ];
 
@@ -89,7 +85,7 @@ const Projects: React.FC = () => {
                 <div className={"projects-content-outer-div"}>
                     <div className={"projects-content-inner-div"}>
                         <Grid container spacing={{xs: 6}}>
-                            {projects.map((project, index) => (
+                            {projects.slice(0, 3).map((project, index) => (
                                 <Grid item xs={4} key={index}>
                                     <Item elevation={0} className={'item'}>
                                         <Project
@@ -117,7 +113,7 @@ const Projects: React.FC = () => {
                             ))}
                             <Grid item xs={4} key={'more'}>
                                 <Item elevation={0} className={'item'}>
-                                    {moreProjects.map((project, _) => (
+                                    {projects.slice(3).map((project, _) => (
                                         <Project
                                             title={project.title}
                                             description={project.description}
