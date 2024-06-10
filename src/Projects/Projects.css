@@ -3,7 +3,7 @@
     width: 100%;
 }
 
-.projects-footer{
+.projects-footer {
     height: 1vh;
 }
 
@@ -75,15 +75,24 @@
 }
 
 #project-description {
-    font-size: 1vh;
+    font-size: 1em;
     font-weight: 400
 }
 
 #project-title {
-    font-size: 1vh;
+    font-size: 1.1em;
     font-weight: 650;
     padding-top: 1vh;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+}
+
+.highlight-proj #project-title {
+    margin-top: 1vh;
+    font-size: 1.5em;
+}
+
+.highlight-proj #project-description {
+    font-size: 1.1em;
 }
 
 .grid-outer {

@@ -70,11 +70,13 @@ const Projects: React.FC = () => {
 
     const highlightProj: IProjectProp[] = [
         {
-            title: 'Crypto Trading Bot',
+            title: 'Cryptocurrency Trading Bot',
             description: 'Python/Trading',
             image: '/trading.png'
         }
     ];
+
+    const containerSpacing: number = 4;
 
     return (
         <div className="projects-outer" id={'projects'}>
@@ -84,7 +86,7 @@ const Projects: React.FC = () => {
                 </div>
                 <div className={"projects-content-outer-div"}>
                     <div className={"projects-content-inner-div"}>
-                        <Grid container spacing={{xs: 6}}>
+                        <Grid container spacing={{xs: containerSpacing}}>
                             {projects.slice(0, 3).map((project, index) => (
                                 <Grid item xs={4} key={index}>
                                     <Item elevation={0} className={'item'}>
@@ -98,7 +100,7 @@ const Projects: React.FC = () => {
                             ))}
                         </Grid>
 
-                        <Grid container spacing={{xs: 6}} id={'project-highlight-grid'}>
+                        <Grid container spacing={{xs: containerSpacing}} id={'project-highlight-grid'}>
                             {highlightProj.map((project, index) => (
                                 <Grid item xs={8} key={index}>
                                     <Item elevation={0} className={'item'}>
@@ -111,7 +113,7 @@ const Projects: React.FC = () => {
                                     </Item>
                                 </Grid>
                             ))}
-                            <Grid item xs={4} key={'more'}>
+                            <Grid item xs={4} key={'more-projects'}>
                                 <Item elevation={0} className={'item'}>
                                     {projects.slice(3).map((project, _) => (
                                         <Project
