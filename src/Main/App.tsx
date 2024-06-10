@@ -8,10 +8,9 @@ import Languages from "../Languages/Languages";
 import Contact from "../Contact/Contact";
 import GitHubContributions from "../GitHubContributions/GitHubContributions";
 import ReactGA from "react-ga4";
-
+import ScrollToTopButton from "../ScrollToTopButton/ScrollToTopButton";
 
 function App() {
-
     useEffect(() => {
         ReactGA.send({
             hitType: "pageview",
@@ -21,15 +20,14 @@ function App() {
 
     return (
         <div className="App" id="home">
-            <div>
-                <Header/>
-                <About/>
-                <Projects/>
-                <Languages/>
-                <GitHubContributions/>
-                <Contact/>
-                <Footer/>
-            </div>
+            <Header/>
+            <About/>
+            <Projects/>
+            <Languages/>
+            <GitHubContributions/>
+            <Contact/>
+            <Footer/>
+            <ScrollToTopButton/>
         </div>
     );
 }
