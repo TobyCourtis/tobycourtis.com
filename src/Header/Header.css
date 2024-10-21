@@ -1,6 +1,6 @@
 .header-div {
-    height: 70px;
-    min-height: 70px;
+    height: 75px;
+    min-height: 75px;
     display: flex;
     color: black;
     margin-top: 1vh;
@@ -78,7 +78,6 @@ ol {
 }
 
 .header-div li p:hover:not(.active), .header-div li h1:hover:not(.active) {
-    background-color: rgba(154, 154, 154, 0.3);
     border-radius: 5px;
 }
 
